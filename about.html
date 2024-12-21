@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Tech Educational Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+        .about {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .about h2 {
+            margin-bottom: 1rem;
+        }
+        .about p {
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .team {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 2rem 1rem;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            background: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            max-width: 300px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const teamMembers = document.querySelectorAll(".team-member");
+            teamMembers.forEach(member => {
+                member.addEventListener("click", function() {
+                    alert(`You clicked on ${this.querySelector("h3").innerText}`);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Educatinal Insights</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Welcome to Tech Educatinal Insights! We are passionate about empowering learners with the knowledge and tools they need to succeed in the ever-evolving tech world. Our mission is to make technology education accessible, engaging, and impactful.</p>
+        </section>
+
+        <section class="team">
+            <div class="team-member">
+                <h3>Misty Jangid</h3>
+            </div>
+            <div class="team-member">
+                <h3>Isha Bhatnagar</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Educational Blog </p>
+    </footer>
+</body>
+</html>
