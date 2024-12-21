@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile-app-development | Tech Educatinal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const highlights = document.querySelectorAll('.highlight');
+            highlights.forEach(element => {
+                element.addEventListener('click', function() {
+                    alert(`You clicked on: ${this.innerText}`);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Educatinal Insights</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="content">
+            <h2>Mobile-app-development</h2>
+            <p>
+                Mobile-app-development is a <span class="highlight">transformative technology</span>. Mobile app development refers to the process of creating software applications that run on mobile devices like smartphones and tablets. With the growing usage of mobile devices, the demand for mobile apps has soared, making it a vital field in the software development industry.
+            </p>
+            <h3>Applications of Mobile-app-development</h3>
+            <ul>
+                <li class="highlight">social media and communication</li>
+                <li class="highlight">E-commerce and Online Shopping</li>
+                <li class="highlight">Banking and Finance</li>
+                <li class="highlight">Healthcare and Fitness</li>
+            </ul>
+            <h3>Learning Mobile-app-development</h3>
+            <p>
+                To start learning mobile app development, begin by choosing a platform (Android or iOS) and familiarize yourself with the respective programming languages: Java or Kotlin for Android, and Swift for iOS. Next, learn the fundamentals of UI/UX design to create intuitive and user-friendly interfaces. You can explore online courses, tutorials, and documentation for hands-on experience with development tools like Android Studio or Xcode. Finally, practice building simple apps to reinforce your skills and gradually move on to more complex projects as you gain confidence.
+
+            </p>
+            <p><a href="https://economictimes.indiatimes.com/topic/mobile-app-development" target="_blank">To Read Latest news</a></p>
+            <p>
+                Stay tuned for more articles and tutorials on mastering Mobile-app-development technologies.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Educatinal Blog</p>
+    </footer>
+</body>
+</html>
