@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-development | Tech Educatinal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const highlights = document.querySelectorAll('.highlight');
+            highlights.forEach(element => {
+                element.addEventListener('click', function() {
+                    alert(`You clicked on: ${this.innerText}`);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Educatinal Insights</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="content">
+            <h2>Web-development</h2>
+            <p>
+                Web development is the process of building and maintaining websites and web applications that are accessed through the internet. It involves creating both the front-end (client side) and back-end (server side) components of a website, ensuring that it is functional, user-friendly, and visually appealing.
+            </p>
+            <h3>Applications of Web-development</h3>
+            <ul>
+                <li class="highlight">E-commerce Websites</li>
+                <li class="highlight">Content Management Systems (CMS)</li>
+                <li class="highlight">Social Media Platforms</li>
+                <li class="highlight">Web Applications</li>
+            </ul>
+            <h3>Learning Web-development</h3>
+            <p>
+                To start learning web development, begin by mastering the basics of HTML, CSS, and JavaScript to understand the structure, design, and interactivity of websites. Then, practice building small projects, explore frameworks and libraries like React or Bootstrap, and gradually dive into back-end development with languages such as Python or Node.js.
+            </p>
+            <p><a href="https://economictimes.indiatimes.com/topic/web-development" target="_blank">To Read Latest news</a></p>
+            <p>
+                Stay tuned for more articles and tutorials on mastering Web-development
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Educatinal Blog</p>
+    </footer>
+</body>
+</html>
