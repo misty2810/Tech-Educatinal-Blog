@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-science | Tech Educatinal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const highlights = document.querySelectorAll('.highlight');
+            highlights.forEach(element => {
+                element.addEventListener('click', function() {
+                    alert(`You clicked on: ${this.innerText}`);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Educatinal Insights</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="content">
+            <h2>Data-science</h2>
+            <p>
+                Data science is an interdisciplinary field that combines statistics, mathematics, programming, and domain knowledge to extract valuable insights and knowledge from structured and unstructured data. 
+            </p>
+            <h3>Applications of Data-science</h3>
+            <ul>
+                <li class="highlight">Predictive Analytics</li>
+                <li class="highlight">Healthcare and Medical Research</li>
+                <li class="highlight">Fraud Detection and Prevention</li>
+                <li class="highlight">Recommendation Systems</li>
+            </ul>
+            <h3>Learning Data-science</h3>
+            <p>
+                To start learning data science, begin by mastering the basics of programming languages like Python or R, along with essential mathematics and statistics. Then, explore online courses, tutorials, and practice working with datasets to gain hands-on experience in data analysis, machine learning, and data visualization.
+            </p>
+            <p><a href="https://economictimes.indiatimes.com/topic/data-science" target="_blank">To Read Latest news</a></p>
+            <p>
+                Stay tuned for more articles and tutorials on mastering Data-science
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Educatinal Blog</p>
+    </footer>
+</body>
+</html>
