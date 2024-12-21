@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics | Tech Educatinal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+        .topics {
+            padding: 2rem 1rem;
+        }
+        .topics h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .topics-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .topic {
+            background: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            cursor: pointer;
+        }
+        .topic a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .topic a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Educatinal Insights</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="topics.html" class="active">Topics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="topics">
+            <h2>Explore Topics</h2>
+            <div class="topics-list">
+                <div class="topic"><a href="ai.html">Artificial Intelligence</a></div>
+                <div class="topic"><a href="web-development.html">Web Development</a></div>
+                <div class="topic"><a href="data-science.html">Data Science</a></div>
+                <div class="topic"><a href="cybersecurity.html">Cybersecurity</a></div>
+                <div class="topic"><a href="cloud-computing.html">Cloud Computing</a></div>
+                <div class="topic"><a href="mobile-app-development.html">Mobile App Development</a></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Educatinal Blog </p>
+    </footer>
+</body>
+</html>
