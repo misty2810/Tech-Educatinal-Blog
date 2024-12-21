@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Tech Education Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #f4f4f4;
+        }
+        .hero h2 {
+            margin-bottom: 1rem;
+        }
+        .hero button {
+            padding: 0.5rem 1rem;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .highlights {
+            display: flex;
+            gap: 1rem;
+            padding: 2rem 1rem;
+            background-color: #f9f9f9;
+        }
+        .highlights article {
+            flex: 1;
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const learnMoreButton = document.getElementById("learn-more");
+            learnMoreButton.addEventListener("click", function() {
+                alert("Explore the world of tech education with us!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Education Insights</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="hero">
+            <h2>Welcome to Tech Education Insights</h2>
+            <p>Your go-to source for all things tech education!</p>
+        </section>
+
+        <section class="highlights">
+            <article>
+                <h3>Latest Technologies</h3>
+                <p>Stay updated with the latest advancements in technology and how they shape our learning experiences.</p>
+            </article>
+            <article>
+                <h3>Tips & Tricks</h3>
+                <p>Master your tech skills with our comprehensive guides and tutorials.</p>
+            </article>
+            <article>
+                <h3>Resources</h3>
+                <p>Discover a curated list of tools, blogs, and platforms to enhance your educational journey.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Education Blog </p>
+    </footer>
+</body>
+</html>
