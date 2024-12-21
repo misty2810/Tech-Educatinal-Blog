@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-computing | Tech Educatinal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const highlights = document.querySelectorAll('.highlight');
+            highlights.forEach(element => {
+                element.addEventListener('click', function() {
+                    alert(`You clicked on: ${this.innerText}`);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Educatinal Insights</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="content">
+            <h2>Cloud-computing</h2>
+            <p>
+                Cloud computing refers to the delivery of computing services such as storage, processing power, databases, networking, software, and analytics over the internet (the "cloud") rather than through local servers or personal devices. It allows businesses and individuals to access and use these resources on-demand, without needing to invest in expensive hardware or maintain complex infrastructure.
+            </p>
+            <h3>Applications of Cloud-computing</h3>
+            <ul>
+                <li class="highlight">Data Storage and Backup</li>
+                <li class="highlight">Cloud-based Software (SaaS)</li>
+                <li class="highlight">Virtual Machines and Infrastructure (IaaS)</li>
+                <li class="highlight">Big Data and Analytics</li>
+                <li class="highlight">Content Delivery and Web Hosting</li>
+            </ul>
+            <h3>Learning Cloud-computing</h3>
+            <p>
+                To start learning cloud computing, begin by understanding the basic concepts of cloud services, such as IaaS, PaaS, and SaaS, and familiarize yourself with major cloud platforms like AWS, Google Cloud, and Microsoft Azure. You can then explore online tutorials, courses, and certifications to gain hands-on experience and deepen your knowledge of cloud infrastructure and services.
+
+            </p>
+            <p><a href="https://www.cloudcomputing-news.net/" target="_blank">To Read Latest news</a></p>
+            <p>
+                Stay tuned for more articles and tutorials on mastering Cloud-computing technologies.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Educatinal Blog</p>
+    </footer>
+</body>
+</html>
