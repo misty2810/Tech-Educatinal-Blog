@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial Intelligence | Tech Educatinal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a.active {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 2rem 1rem;
+            line-height: 1.6;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        .highlight {
+            color: #007BFF;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const highlights = document.querySelectorAll('.highlight');
+            highlights.forEach(element => {
+                element.addEventListener('click', function() {
+                    alert(`You clicked on: ${this.innerText}`);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Tech Educatinal Insights</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="content">
+            <h2>Artificial Intelligence</h2>
+            <p>
+                Artificial Intelligence (AI) is a <span class="highlight">transformative technology</span> shaping the future of industries, businesses, and daily life. From machine learning to neural networks, AI is enabling computers to perform tasks that traditionally required human intelligence.
+            </p>
+            <h3>Applications of AI</h3>
+            <ul>
+                <li class="highlight">Natural Language Processing (e.g., chatbots, translation tools)</li>
+                <li class="highlight">Image and Speech Recognition</li>
+                <li class="highlight">Autonomous Vehicles</li>
+                <li class="highlight">Healthcare Diagnostics</li>
+                <li class="highlight">Predictive Analytics</li>
+            </ul>
+            <h3>Learning AI</h3>
+            <p>
+                To start with AI, you can explore programming languages like Python, frameworks such as TensorFlow and PyTorch, and delve into topics like data preprocessing, model training, and evaluation.
+            </p>
+            <p><a href="https://www.artificialintelligence-news.com/" target="_blank">To Read Latest news</a></p>
+            <p>
+                Stay tuned for more articles and tutorials on mastering AI technologies.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tech Educatinal Blog</p>
+    </footer>
+</body>
+</html>
